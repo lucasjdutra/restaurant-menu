@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #C3C2C0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem 0.2rem rgba(0, 0, 0, 0.2);
+}
+
+.header {
+    width: 100%;
+}
+
+.header img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f5;
+    padding: 1.2rem;
+    margin-bottom: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.4rem 1.1rem rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    font-size: 1.8rem;
+    font-weight: 100;
+    margin: 1rem;
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-size: 1.4rem;
+    margin: 0;
+    margin-bottom: 0.5rem;
+}
+
+.description {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.fooditem {
+    width: 14rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    padding: 1rem;
+    border-radius: 0.8rem;
+    box-shadow: 0 0.4rem 1.1rem rgba(0, 0, 0, 0.3);
+}
+
+.price {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #08561A;
+    margin: 0.3rem 0;
+}
+
+.fooditem .quantity {
+    margin-top: auto;
+}
+
+.fooditem img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+input {
+    width: 80%;
+    height: 3rem;
+    border: none;
+    margin: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.calculate {
+    width: 90%;
+    color: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    background-color: #007AFF;
+    padding: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+.calculate:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.1rem rgba(0, 0, 0, 0.3);
+}

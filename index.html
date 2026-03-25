@@ -4,32 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurant Menu</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/quantity.css">
 </head>
 <body>
     <div class="container">
         <div class="header">
             <img src="assets/home.jpg" alt="Header Image">
         </div>
+
         <h1>Menu - Select your dish</h1>
         
         <div class="menu">
             <h2>Main Course</h2>
-            <p>All dishes include rice, beans, and the dessert of the day.</p>
+            <p class="description">All dishes include rice, beans, and the dessert of the day.</p>
+            <div class="items">
+                <div class="fooditem">
+                    <img src="assets/bife.jpg" alt="Beef with Potatoes">
+                    <p class="description">Beef with Potatoes</p>
+                    <p class="price">R$ 30,00</p>
+                    <div class="quantity buttons_added">
+                        <input type="button" value="-" class="minus"><input type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="" inputmode=""><input type="button" value="+" class="plus">
+                    </div>
+                </div>
+                <div class="fooditem">
+                    <img src="assets/coxa.jpg" alt="Crispy Chicken Thigh">
+                    <p class="description">Crispy Chicken Thigh</p>
+                    <p class="price">R$ 25,00</p>
+                    <div class="quantity buttons_added">
+                        <input type="button" value="-" class="minus"><input type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="" inputmode=""><input type="button" value="+" class="plus">
+                    </div>
+                </div>
+                <div class="fooditem">
+                    <img src="assets/panela.jpg" alt="Pot Beef">
+                    <p class="description">Pot Beef</p>
+                    <p class="price">R$ 22,00</p>
+                    <div class="quantity buttons_added">
+                        <input type="button" value="-" class="minus"><input type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="" inputmode=""><input type="button" value="+" class="plus">
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div class="menu">
             <h2>Side Dishes</h2>
-            <p>Portions for one person.</p>
+            <p class="description">Portions for one person.</p>
+            <div class="items">
+                <div class="fooditem">
+                    <img src="assets/farofa.jpg" alt="Farofa">
+                    <p class="description">Farofa</p>
+                    <p class="price">R$ 10,00</p>
+                    <div class="quantity buttons_added">
+                        <input type="button" value="-" class="minus"><input type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="" inputmode=""><input type="button" value="+" class="plus">
+                    </div>
+                </div>
+                <div class="fooditem">
+                    <img src="assets/salad.jpg" alt="Salad">
+                    <p class="description">Salad</p>
+                    <p class="price">R$ 8,00</p>
+                    <div class="quantity buttons_added">
+                        <input type="button" value="-" class="minus"><input type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="" inputmode=""><input type="button" value="+" class="plus">
+                    </div>
+                </div>
+                <div class="fooditem">
+                    <img src="assets/torresmo.jpg" alt="Pork Cracklings">
+                    <p class="description">Pork Cracklings</p>
+                    <p class="price">R$ 12,00</p>
+                    <div class="quantity buttons_added">
+                        <input type="button" value="-" class="minus"><input type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="" inputmode=""><input type="button" value="+" class="plus">
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div class="menu info">
             <h2>Personal Information</h2>
-            <input type="text">
-            <input type="number">
-            <input type="text">
+            <input type="text" placeholder="Enter your name">
+            <input type="text" id="phone" placeholder="Enter your phone number">
+            <input type="text" placeholder="Enter your e-mail">
         </div>
 
-        <button type="submit"></button>
+        <button class="calculate" type="submit">Calculate</button>
     </div>
 
     <script src="script/jquery-4.0.0.min.js"></script>
